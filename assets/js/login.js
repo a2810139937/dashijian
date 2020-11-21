@@ -38,7 +38,7 @@ $(function() {
         $.post('/api/login',data,function(sta) {
             if(sta.status!==0)return layer.msg(sta.message);
             layer.msg(sta.message);
-            localStorage.setItem('token','Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjM2NzMsInVzZXJuYW1lIjoiXV1dIiwicGFzc3dvcmQiOiIiLCJuaWNrbmFtZSI6IiIsImVtYWlsIjoiIiwidXNlcl9waWMiOiIiLCJpYXQiOjE2MDU4NzI0MTAsImV4cCI6MTYwNTkwODQxMH0.Z9S5mrtBUP-dnN5Pws-hRdEQ41Gn3Idc0kIgHEa0NgM')
+            localStorage.setItem('token',sta.token)
             location.href="/index.html"
             $('#dlym')[0].reset();
         })
