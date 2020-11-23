@@ -21,7 +21,7 @@ huoqu()
     $('.lll').html('欢迎&nbsp;&nbsp;'+name)
     if(aaa.user_pic!==null){
       
-      $('.layui-nav-img').attr('src',aaa.user_pic)
+      $('.layui-nav-img').attr('src',aaa.user_pic).show();
       $('.touxiang').hide();
     }else{
       $('.layui-nav-img').hide()
