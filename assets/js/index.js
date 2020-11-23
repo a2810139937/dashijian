@@ -10,6 +10,7 @@ huoqu()
             Authorization:localStorage.getItem('token')||""
           },
           success: function(sta) {
+            if(sta.status !=0) return;
             touxiang(sta.data)
           }
           
