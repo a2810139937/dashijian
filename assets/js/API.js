@@ -1,6 +1,6 @@
 $(function() {
     $.ajaxPrefilter(function(a) {
-        a.url = 'http://www.liulongbin.top:3007' + a.url
+        a.url = 'http://ajax.frontend.itheima.net' + a.url
         if (a.url.indexOf('/my/') !== -1) {
             a.headers = {
               Authorization: localStorage.getItem('token') || ''

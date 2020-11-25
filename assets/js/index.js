@@ -1,5 +1,9 @@
 $(function () {
 huoqu()
+function lb() {
+  $('.lb').click();
+  console.log("ok");
+  }
   })
 
   function huoqu(){
@@ -37,4 +41,5 @@ huoqu()
       location.href='/login.html',
       layer.close(index);
     });
+   
     })
